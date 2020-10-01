@@ -1,0 +1,30 @@
+/* 1.Body 
+   2.Fixed Button
+   3.Header 
+   4.Özgeçmiş 
+   */
+ 
+ /* 1.Body CSS */
+ body{  font-family: 'Kumbh Sans', sans-serif!important;}
+
+/* 2.Fixed Button CSS */
+.fixed-bottom{visibility: hidden; }
+
+/* 3.Header CSS*/
+.jumbotron{
+  font-family: 'Asap Condensed', sans-serif!important;
+  background-color:#e0ebe8;
+  color:#007f5f;}
+  .jumbotron a{color:#007f5f;}
+.image{margin: auto;}
+.social{color:#007f5f;}
+
+/*4.Özgeçmiş*/
+ .resume-section{margin-right: 5rem;
+  margin-left:80px;
+  margin-top:8rem;  }
+  
+  hr{background:#a30000!important;}
+  
+  footer{
+    background-color:#e0ebe8;}

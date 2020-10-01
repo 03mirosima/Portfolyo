@@ -1,0 +1,42 @@
+
+ 
+body{
+  background-color:#60a3bc; font-family: 'Montserrat Alternates', sans-serif;}
+  .big{margin-top:8rem;}
+.brand_logo_container {
+    position: absolute;
+    height: 170px;
+    width: 170px;
+    top: -75px;
+    left:100px;
+    border-radius: 50%;
+    background:#60a3bc;;
+    padding: 10px;
+    text-align: center;}
+		.brand_logo {
+			height: 150px;
+			width: 150px;
+			border-radius: 50%;
+			border: 2px solid white;}
+
+    .tabrow{background-color:#c0392b;
+        height: 660px;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+		-webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+		-moz-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+		border-radius: 15px;}
+	  
+    /* Tab butonlarını ayarlama*/  
+
+	
+	
+	.nav-pills>.nav-item>a { color:black!important;}
+	.nav-link{color:white!important;}
+	.nav > li > a:focus, .nav > li > a:hover {color:black!important}
+	/* Kayıt butonları */
+		  
+  /* Footer */
+.footerrow{background-color: #c0392b; text-align: center; margin: 0 auto; border-radius: 15px;}
+.fa,.fp,.copyright{color:rgb(221, 219, 219)!important;}
+.btn{background-color:white!important; color:black!important; border-color:white!important;}
+.fm{color:rgb(255, 254, 254);}

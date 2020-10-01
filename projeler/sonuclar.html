@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Sonuçlar</title>
+  
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">	
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,200,300,700">
+<link rel="stylesheet" href="css/ogretmensonuclar.css">
+<link href="https://fonts.googleapis.com/css?family=Montserrat+Alternates:400,600,700i&display=swap&subset=latin-ext" rel="stylesheet">
+<link rel="icon" href="img/logo.png">  	
+</head>	
+<body>
+
+<div id="throbber" style="display:none; min-height:120px;"></div>
+<div id="noty-holder"></div>
+<div id="wrapper">
+	<!--Üst Nav Bar-->
+<nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+            <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+                <span class="sr-only">Menü</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button> </div>
+       
+        <ul class="nav navbar-right top-nav">          
+            <li class="dropdown">
+                <a href="index.html" >Anasayfa</a> </li>
+        </ul>
+	<!-- Üst Nav Bar Son-->
+		<!--Yan Menü-->
+        <div class="collapse navbar-collapse navbar-ex1-collapse">
+			
+            <ul class="nav navbar-nav side-nav"> 
+				<!-- Bir sınıf içeriği-->
+				<li>
+                    <a href="#" data-toggle="collapse" data-target="#submenu-1"><i class="fa fa-fw fa-edit"></i>A SINIFI <i class="fa fa-fw fa-angle-down pull-right"></i></a>
+                    <ul id="submenu-1" class="collapse">
+                        <li><a href="#"><i class="fa fa-angle-double-right"></i> Veli</a></li>
+                        <li><a href="#"><i class="fa fa-angle-double-right"></i> Zeynep</a></li>
+                        <li><a href="#"><i class="fa fa-angle-double-right"></i> Ahsen</a></li>
+					</ul>
+                </li>
+				<!-- Bir sınıf içeriği Son-->
+				<!-- Bir sınıf içeriği-->
+                <li>
+                    <a href="#" data-toggle="collapse" data-target="#submenu-2"><i class="fa fa-fw fa-edit"></i>  B SINIFI<i class="fa fa-fw fa-angle-down pull-right"></i></a>
+                    <ul id="submenu-2" class="collapse">
+                        <li><a href="#"><i class="fa fa-angle-double-right"></i> Veli</a></li>
+                        <li><a href="#"><i class="fa fa-angle-double-right"></i> Zeynep</a></li>
+                        <li><a href="#"><i class="fa fa-angle-double-right"></i> Ahsen</a></li>
+                    </ul>
+                </li>
+				<!-- ----- -->
+				  <li>
+                    <a href="#" data-toggle="collapse" data-target="#submenu-3"><i class="fa fa-fw fa-edit"></i> C SINIFI <i class="fa fa-fw fa-angle-down pull-right"></i></a>
+                    <ul id="submenu-3" class="collapse">
+                        <li><a href="#"><i class="fa fa-angle-double-right"></i> Veli</a></li>
+                        <li><a href="#"><i class="fa fa-angle-double-right"></i> Zeynep</a></li>
+                        <li><a href="#"><i class="fa fa-angle-double-right"></i> Ahsen</a></li>
+					</ul>
+                </li>
+				<!-- --- ----->
+            </ul>
+        </div>
+    </nav>
+	<!-- Yan Menü Son-->
+	
+<!-- Sekmeli Tablo-->
+        <div class="col-lg-12" id="content">
+        <section id="fancyTabWidget" class="tabs t-tabs">
+			<!-- Tablar -->
+        <ul class="nav nav-tabs fancyTabs" role="tablist">
+			
+                    <li class="tab fancyTab active">
+                    <div class="arrow-down"><div class="arrow-down-inner"></div></div>
+						
+                        <a id="tab0" href="#tabBody0" role="tab" aria-controls="tabBody0" aria-selected="true" data-toggle="tab" tabindex="0">  <br><br>
+							<div class="col-md-5"><div class="progress" onload="filling()" >
+          <div class="progress-bar progress-bar-striped active" role="progressbar" id="item1" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"  ></div></div></div>
+
+
+<span><p class="lead">Genel Bilgi</p></span></a></li>
+                    
+                    <li class="tab fancyTab">
+                    <div class="arrow-down"><div class="arrow-down-inner"></div></div>
+                        <a id="tab1" href="#tabBody1" role="tab" aria-controls="tabBody1" aria-selected="true" data-toggle="tab" tabindex="0" ><br><br>
+							<div class="col-md-5">
+						<div class="progress" onclick="filling()" >				
+          <div class="progress-bar progress-bar-striped active" role="progressbar" id="item2" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" ></div></div></div>
+
+
+<span><p class="lead">Görsel Algı</p></span></a></li>
+                    
+                    <li class="tab fancyTab">
+                    <div class="arrow-down"><div class="arrow-down-inner"></div></div>
+                        <a id="tab2" href="#tabBody2" role="tab" aria-controls="tabBody2" aria-selected="true" data-toggle="tab" tabindex="0"><br><br>
+							<div class="col-md-5"><div class="progress" onload="filling()">
+          <div class="progress-bar progress-bar-striped active" role="progressbar" id="item3" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" ></div></div></div>
+
+
+<span ><p class="lead">Yazmaya Hazırlık</p></span></a></li>
+                    
+                    <li class="tab fancyTab">
+                    <div class="arrow-down"><div class="arrow-down-inner"></div></div>
+                        <a id="tab3" href="#tabBody3" role="tab" aria-controls="tabBody3" aria-selected="true" data-toggle="tab" tabindex="0"><br><br>
+							<div class="col-md-5"><div class="progress" onload="filling()">
+          <div class="progress-bar progress-bar-striped active" role="progressbar" id="item4" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" ></div></div></div>
+<span><p class="lead">İşitsel Algı</p></span></a></li> 
+                         
+                    <li class="tab fancyTab">
+                    <div class="arrow-down"><div class="arrow-down-inner"></div></div>
+                        <a id="tab4" href="#tabBody4" role="tab" aria-controls="tabBody4" aria-selected="true" data-toggle="tab" tabindex="0"><br><br>
+							<div class="col-md-5"><div class="progress" onload="filling()">
+          <div class="progress-bar progress-bar-striped active" role="progressbar" id="item5" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" ></div></div></div>
+     <span><p class="lead">Görsel Algı</p></span></a></li>
+			
+			         <li class="tab fancyTab">
+                    <div class="arrow-down"><div class="arrow-down-inner"></div></div>
+                        <a id="tab5" href="#tabBody5" role="tab" aria-controls="tabBody5" aria-selected="true" data-toggle="tab" tabindex="0"><br><br>
+		<div class="col-md-5">
+		<div class="progress" onload="filling()">
+          <div class="progress-bar progress-bar-striped active" role="progressbar" id="item6" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" ></div></div></div>
+		<span><p class="lead">Görsel Algı</p></span></a></li> </ul>
+	        <!-- ----- -->
+	    <!-- Tab İçerikleri-->
+        <div id="myTabContent" class="tab-content fancyTabContent" aria-live="polite">
+        <div class="tab-pane  fade active in" id="tabBody0" role="tabpanel" aria-labelledby="tab0" aria-hidden="false" tabindex="0">
+                        	   <div class="row">
+								<div class="col-lg-12">
+									<!-- Analiz Tablosu-->
+                        		<table class="table">
+                               <tbody>
+		         <!-- Bir satır-->
+              <tr>
+             <td>Söylenen Kelimenin Görselini Bulma</td>
+		     <td><div class="progress" onload="filling()">
+          <div class="progress-bar progress-bar-striped active" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" id="item7"></div></div></td></tr>
+		   <!-- ---- -->
+            <tr>
+            <td>Söylenen Kelimeyi Anlama ve Uygulama</td>
+            <td> <div class="progress" onload="filling()">
+         <div class="progress-bar progress-bar-striped active" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" id="item8" ></div></div></td></tr>
+		   <!-- ---- -->
+	    <tr>
+        <td>Görsel Bağlantı Kurma</td>
+        <td> <div class="progress" onload="filling()">
+    <div class="progress-bar progress-bar-striped active" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" id="item9" ></div></div></td></tr>
+		<!-- ---- -->
+		<tr>
+        <td>Verilen Yönergeyi Anlama ve Uygulama</td>
+        <td> <div class="progress" onload="filling()">
+    <div class="progress-bar progress-bar-striped active" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" id="item10">40</div></div></td></tr>
+		<!-- ---- -->
+		<tr>
+        <td>Verilen Yönergeyi Anlama ve Uygulama</td>
+        <td> <div class="progress" onload="filling()">
+    <div class="progress-bar progress-bar-striped active" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" id="item11">40</div></div></td></tr>
+		<!-- ----- -->
+  </tbody>
+  </table>
+    <!-- Tablo Sonu -->
+</div>
+</div>
+</div>
+<!--1.Sekme Sonu-->	
+			<!--2.Sekme Başlangıcı-->
+ <div class="tab-pane  fade" id="tabBody1" role="tabpanel" aria-labelledby="tab1" aria-hidden="true" tabindex="0">
+ <div class="row">
+ <div class="col-lg-12">
+           			<!-- Analiz Tablosu-->
+                        		<table class="table">
+                               <tbody>
+		         <!-- Bir satır-->
+              <tr>
+             <td>Söylenen Kelimenin Görselini Bulma</td>
+		     <td><div class="progress" onload="filling()">
+          <div class="progress-bar progress-bar-striped active" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" id="item12"></div></div></td></tr>
+		   <!-- ---- -->
+            <tr>
+            <td>Söylenen Kelimeyi Anlama ve Uygulama</td>
+            <td> <div class="progress" onload="filling()">
+         <div class="progress-bar progress-bar-striped active" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" id="item13" ></div></div></td></tr>
+		   <!-- ---- -->
+	    <tr>
+        <td>Görsel Bağlantı Kurma</td>
+        <td> <div class="progress" onload="filling()">
+    <div class="progress-bar progress-bar-striped active" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" id="item14" ></div></div></td></tr>
+		<!-- ---- -->
+		<tr>
+        <td>Verilen Yönergeyi Anlama ve Uygulama</td>
+        <td> <div class="progress" onload="filling()">
+    <div class="progress-bar progress-bar-striped active" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" id="item15">40</div></div></td></tr>
+		<!-- ---- -->
+		<tr>
+        <td>Verilen Yönergeyi Anlama ve Uygulama</td>
+        <td> <div class="progress" onload="filling()">
+    <div class="progress-bar progress-bar-striped active" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" id="item16">40</div></div></td></tr>
+		<!-- ----- -->
+  </tbody>
+  </table>
+    <!-- Tablo Sonu --> </div> </div></div>
+			<!--2.Sekme Sonu-->
+            <!-- 3.Sekme Başlangıcı-->
+                    <div class="tab-pane  fade" id="tabBody2" role="tabpanel" aria-labelledby="tab2" aria-hidden="true" tabindex="0">
+                        <div class="row">
+                                <div class="col-lg-12">
+                        		<!-- Analiz Tablosu-->
+                        		<table class="table">
+                               <tbody>
+		         <!-- Bir satır-->
+              <tr>
+             <td>Söylenen Kelimenin Görselini Bulma</td>
+		     <td><div class="progress" onload="filling()">
+          <div class="progress-bar progress-bar-striped active" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" id="item17"></div></div></td></tr>
+		   <!-- ---- -->
+            <tr>
+            <td>Söylenen Kelimeyi Anlama ve Uygulama</td>
+            <td> <div class="progress" onload="filling()">
+         <div class="progress-bar progress-bar-striped active" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" id="item18" ></div></div></td></tr>
+		   <!-- ---- -->
+	    <tr>
+        <td>Görsel Bağlantı Kurma</td>
+        <td> <div class="progress" onload="filling()">
+    <div class="progress-bar progress-bar-striped active" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" id="item19" ></div></div></td></tr>
+		<!-- ---- -->
+		<tr>
+        <td>Verilen Yönergeyi Anlama ve Uygulama</td>
+        <td> <div class="progress" onload="filling()">
+    <div class="progress-bar progress-bar-striped active" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" id="item20">40</div></div></td></tr>
+		<!-- ---- -->
+		<tr>
+        <td>Verilen Yönergeyi Anlama ve Uygulama</td>
+        <td> <div class="progress" onload="filling()">
+    <div class="progress-bar progress-bar-striped active" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" id="item21">40</div></div></td></tr>
+		<!-- ----- -->
+  </tbody>
+  </table>
+    <!-- Tablo Sonu --> </div></div></div>
+			<!--3.Sekme Sonu -->
+			<!-- 4.Sekme Sonu-->
+                    <div class="tab-pane  fade" id="tabBody3" role="tabpanel" aria-labelledby="tab3" aria-hidden="true" tabindex="0">
+                    <div class="row">
+                        <div class="col-md-12">
+                        					<!-- Analiz Tablosu-->
+                        		<table class="table">
+                               <tbody>
+		         <!-- Bir satır-->
+              <tr>
+             <td>Söylenen Kelimenin Görselini Bulma</td>
+		     <td><div class="progress" onload="filling()">
+          <div class="progress-bar progress-bar-striped active" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" id="item22"></div></div></td></tr>
+		   <!-- ---- -->
+            <tr>
+            <td>Söylenen Kelimeyi Anlama ve Uygulama</td>
+            <td> <div class="progress" onload="filling()">
+         <div class="progress-bar progress-bar-striped active" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" id="item23" ></div></div></td></tr>
+		   <!-- ---- -->
+	    <tr>
+        <td>Görsel Bağlantı Kurma</td>
+        <td> <div class="progress" onload="filling()">
+    <div class="progress-bar progress-bar-striped active" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" id="item24" ></div></div></td></tr>
+		<!-- ---- -->
+		<tr>
+        <td>Verilen Yönergeyi Anlama ve Uygulama</td>
+        <td> <div class="progress" onload="filling()">
+    <div class="progress-bar progress-bar-striped active" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" id="item25">40</div></div></td></tr>
+		<!-- ---- -->
+		<tr>
+        <td>Verilen Yönergeyi Anlama ve Uygulama</td>
+        <td> <div class="progress" onload="filling()">
+    <div class="progress-bar progress-bar-striped active" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" id="item26">40</div></div></td></tr>
+		<!-- ----- -->
+  </tbody>
+  </table>
+    <!-- Tablo Sonu -->
+  </div></div></div>
+			<!--4.Sekme Sonu-->
+              <!-- 5.Sekme Başlangıcı-->      
+			<div class="tab-pane  fade" id="tabBody4" role="tabpanel" aria-labelledby="tab4" aria-hidden="true" tabindex="0">
+                    <div class="row">
+                        <div class="col-md-12">
+                        					<!-- Analiz Tablosu-->
+                        		<table class="table">
+                               <tbody>
+		         <!-- Bir satır-->
+              <tr>
+             <td>Söylenen Kelimenin Görselini Bulma</td>
+		     <td><div class="progress" onload="filling()">
+          <div class="progress-bar progress-bar-striped active" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" id="item27"></div></div></td></tr>
+		   <!-- ---- -->
+            <tr>
+            <td>Söylenen Kelimeyi Anlama ve Uygulama</td>
+            <td> <div class="progress" onload="filling()">
+         <div class="progress-bar progress-bar-striped active" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" id="item28" ></div></div></td></tr>
+		   <!-- ---- -->
+	    <tr>
+        <td>Görsel Bağlantı Kurma</td>
+        <td> <div class="progress" onload="filling()">
+    <div class="progress-bar progress-bar-striped active" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" id="item29" ></div></div></td></tr>
+		<!-- ---- -->
+		<tr>
+        <td>Verilen Yönergeyi Anlama ve Uygulama</td>
+        <td> <div class="progress" onload="filling()">
+    <div class="progress-bar progress-bar-striped active" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" id="item30">40</div></div></td></tr>
+		<!-- ---- -->
+		<tr>
+        <td>Verilen Yönergeyi Anlama ve Uygulama</td>
+        <td> <div class="progress" onload="filling()">
+    <div class="progress-bar progress-bar-striped active" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" id="item31">40</div></div></td></tr>
+		<!-- ----- -->
+  </tbody>
+  </table>
+    <!-- Tablo Sonu --></div></div></div>
+			<!-- 5.Sekme Sonu-->
+			<!--6.Sekme Başlangıcı-->
+                    <div class="tab-pane  fade" id="tabBody5" role="tabpanel" aria-labelledby="tab5" aria-hidden="true" tabindex="0">
+                    <div class="row">
+                        <div class="col-lg-12">
+                        						<!-- Analiz Tablosu-->
+                        		<table class="table">
+                               <tbody>
+		         <!-- Bir satır-->
+              <tr>
+             <td>Söylenen Kelimenin Görselini Bulma</td>
+		     <td><div class="progress" onload="filling()">
+          <div class="progress-bar progress-bar-striped active" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" id="item32"></div></div></td></tr>
+		   <!-- ---- -->
+            <tr>
+            <td>Söylenen Kelimeyi Anlama ve Uygulama</td>
+            <td> <div class="progress" onload="filling()">
+         <div class="progress-bar progress-bar-striped active" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" id="item33" ></div></div></td></tr>
+		   <!-- ---- -->
+	    <tr>
+        <td>Görsel Bağlantı Kurma</td>
+        <td> <div class="progress" onload="filling()">
+    <div class="progress-bar progress-bar-striped active" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" id="item34" ></div></div></td></tr>
+		<!-- ---- -->
+		<tr>
+        <td>Verilen Yönergeyi Anlama ve Uygulama</td>
+        <td> <div class="progress" onload="filling()">
+    <div class="progress-bar progress-bar-striped active" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" id="item35">40</div></div></td></tr>
+		<!-- ---- -->
+		<tr>
+        <td>Verilen Yönergeyi Anlama ve Uygulama</td>
+        <td> <div class="progress" onload="filling()">
+    <div class="progress-bar progress-bar-striped active" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" id="item36">40</div></div></td></tr>
+		<!-- ----- -->
+  </tbody>
+  </table>
+    <!-- Tablo Sonu --></div></div></div> <!--6.Sekme Sonu-->
+	</div><!-- Tab İçerikleri Sonu-->
+ </section>
+ </div><!-- Sekmeli Tablo Son -->
+</div><!-- Wrapper Son -->
+
+
+	
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.0/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script  src="js/ogretmensonuclar.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,112 @@
+/* 1.Body 
+   2.NavBar
+   3.Header  
+   4.Neler Yapabilirim?
+   5.Projeler
+   6.Footer */
+ 
+ /* 1.Body CSS */
+ 
+ html {
+  scroll-behavior: smooth;
+ }
+ body {
+	padding-top: 56px;
+  font-family: 'Quicksand', sans-serif;
+  color:black!important;
+ }
+ a{text-decoration: none!important;color:white;}
+ a:hover{text-decoration: none!important; color:white;}
+/*Body Son*/
+
+/* 2.NavBar CSS */
+
+.navbar-default{
+  background-color: #fff;
+	box-shadow: 0 0.0625rem 0.375rem 0 rgba(0, 0, 0, 0.1);
+	font-size:20px;
+  transition: all 0.2s;
+}
+.navbar-default.scrolled {
+	background-color: #8bc753 !important;
+  transition: background-color 200ms linear;
+}
+ 
+.nav-link{color:black!important;}
+
+  .navbar-default.scrolled .nav-link{
+    color:white!important;
+  }
+/*NavBar Son*/
+
+/* 3.Header CSS*/
+.header {
+    background: url("../img/headerback.png") center center no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.header .wrapper {
+    margin-top: 10rem;
+    margin-bottom: 0;
+}
+
+.change{color:#8b6220;}
+
+.bigscreen{font-size:5rem;}
+
+.smallscreen{display: none;}
+
+.fa-circle{
+  color:#669d31; }
+
+  .social-icons .fa-stack:hover{
+    transform: translateY(-6px);
+    transition: 0.3s;
+  }
+
+  .change:before{
+    content: 'ULUDÜZ';
+    animation:animate infinite 3s;
+  }
+
+  @keyframes animate{
+    0%{content:'ULUDÜZ';}
+    20%{content:'Yaratıcı';}
+    40%{content:'Çalışkan'; }
+    60%{content:'Hevesli'; }
+    80%{content:'Developer';}
+    100%{content:'ULUDÜZ';}   
+  }
+/* Header Son*/
+
+/* 4.Neler Yapabilirim?*/
+.deets{margin-top:2rem;}
+
+.parallax-effect {
+  background-image: url("../img/deneme.svg");
+  min-height: 300px; 
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  }
+/*5.Projeler*/
+
+
+
+/*6.Footer*/
+
+.footersocial{color:#669d31!important;}
+
+/* Media Queries*/
+
+/*Header Name*/
+@media screen and (max-width: 992px) {
+  .bigscreen{display: none;}
+  .smallscreen{display: block;}
+  .smallscreenh2{color:#8b6220;}  }
+  
+
